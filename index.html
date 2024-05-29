@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>ShoCK</title>
 <style>
-body {margin:0;}
+body {
+  font-size: 28px;
+}
 
 ul {
   list-style-type: none;
@@ -11,9 +12,9 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: #333;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
 }
 
 li {
@@ -28,27 +29,31 @@ li a {
   text-decoration: none;
 }
 
-li a:hover:not(.active) {
+li a:hover {
   background-color: #111;
 }
 
 .active {
-  background-color: #04AA6D;
+  background-color: #4CAF50;
 }
 </style>
 </head>
 <body>
 
+<div class="header">
+  <h2>Bricked</h2>
+  <p>This is not a article</p>
+</div>
+
 <ul>
   <li><a class="active" href="#home">Home</a></li>
   <li><a href="#news">News</a></li>
   <li><a href="#contact">Contact</a></li>
-  <li><a href="#about">About</a></li>
 </ul>
 
-<div style="padding:20px;background-color:#b9b9b9;height:1500px;">
-  <h1>Welcome To Shock</h1>
-</div>
+<h3>Description</h3>
+<p></p>
+<small>last edited by Ivaan at 29-05-2024</small>
 
 </body>
 </html>
